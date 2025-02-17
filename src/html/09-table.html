@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>테이블 관련 요소</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid currentColor;
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>테이블 관련 요소</h1>
+    <!-- 내가 한 거  -->
+    <h2>테이블 예제</h2>
+    <table>
+      <tr>
+        <th>학습시간</th>
+        <td>09:00~17:00(28시간)</td>
+        <th>난이도</th>
+        <td>초급</td>
+      </tr>
+      <tr>
+        <th>교육비 지원</th>
+        <td>고용 보험 비환급</td>
+        <th>평가항목</th>
+        <td>출석률 100%</td>
+      </tr>
+      <tr>
+        <th>수료기준</th>
+        <td>총점 80점 이상시 수료</td>
+        <th>정원</th>
+        <td>24명</td>
+      </tr>
+      <tr>
+        <th>교재정보</th>
+        <td colspan="3">
+          입문자를 위한 GIT과 HTML&CSS <br />HTML& CSS 웹사이트 개발과 디자인
+          기초 (35,000원)
+        </td>
+      </tr>
+    </table>
+    <!-- 선생님이 한 것 -->
+    <table class="lecture-tabe">
+      <caption class="sr-only">
+        입문자를 위한 git 과 html&css 과정
+        <span
+          >학습시간, 난이도, 교육비 지원, 평가항목, 수료 기준, 정원, 교재정보
+          등을 나타냄</span
+        >
+        <tr>
+          <th id="study time">학습시간</th>
+          <td id="headers">09:00~17:00(28시간)</td>
+          <th id="difficulty">난이도</th>
+          <!-- 깃클론해서 확인해보기 -->
+        </tr>
+      </caption>
+    </table>
+    <table>
+      <caption>
+        멋쟁이 사자처럼 프론트엔드 스쿨 13기 스텝
+      </caption>
+      <colgroup>
+        <col />
+        <col span="2" />
+        <col />
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col">번호</th>
+          <th scope="col">강사</th>
+          <th scope="col">멘토</th>
+          <th scope="col">운영진</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row">1</td>
+          <td>슬비쌤</td>
+          <td>유진혁</td>
+          <td>정재인</td>
+        </tr>
+        <tr>
+          <td scope="row">2</td>
+          <td>용쌤</td>
+          <td>권석기</td>
+          <td>금윤호</td>
+        </tr>
+        <tr>
+          <td colspan="2">&nbsp;</td>
+          <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+          <td colspan="2" rowspan="2">&nbsp;</td>
+          <td colspan="2">&nbsp;</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td scope="row">인원수</td>
+          <td>2명</td>
+          <td>2명</td>
+          <td>2명</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
