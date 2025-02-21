@@ -1,0 +1,8 @@
+@import '/src/common/mini-reset.css';
+
+.like {
+  background-color: yellow;
+  position: relative;
+  left: 50px;
+  top: 50px;
+}
