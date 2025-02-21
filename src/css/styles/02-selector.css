@@ -1,0 +1,66 @@
+body {
+  background-color: #ffc;
+}
+/* 태그 선택자 */
+p {
+  color: red;
+
+  &:hover {
+    background-color: skyblue;
+  }
+}
+
+&:focus {
+  border: 10px solid red;
+}
+
+/* 클래스 선택자 */
+.like {
+  color: green;
+}
+
+/* 아이디 선택자 */
+#lion {
+  color: blue;
+}
+/* 속성 선택자 */
+[title] {
+  color: purple;
+}
+
+a [href^='https://']
+{
+  text-decoration: none;
+}
+/* pdf파일만 찾아서 배경 적용 */
+a[hrefs$='pdf'] {
+  background-color: violet;
+}
+
+/* 가상 클래스 선택자: 한번도 방문하지 않았을 때 검정으로*/
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: olive;
+}
+
+a:hover {
+  color: blue;
+}
+a:focus {
+  color: aqua;
+}
+/* 클릭하는 순간 살짝 보이는 것 */
+a:active {
+  background-color: #fff;
+}
+
+/* 가상 요소 선택자 */
+h1 ::before {
+  content: '멋사';
+}
+h1 ::after {
+  content: '13기';
+}
