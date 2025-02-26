@@ -1,0 +1,17 @@
+@import url(/src/common/best-reset.css);
+@import url(/src/common/ally.css);
+
+/* 기본적으로 적용될 배경색  */
+/* clamp()함수를 이용해서 글자크기를 유연하게 설정 가능 */
+body {
+  background: blue;
+  font-size: clamp(0.75rem, 2vw, 2rem);
+  /* 뷰포트 크기에 따라 적용될 배경색  */
+  @media (min-width: 600px) {
+    background: pink;
+  }
+  /* 뷰포트(1200px) 크기에 따라 적용될 배경색 */
+  @media (min-width: 1000px) {
+    background: orange;
+  }
+}
