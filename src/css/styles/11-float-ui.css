@@ -1,0 +1,58 @@
+@import '/src/common/modern-reset.css';
+
+body {
+  font-family: SUIT, sans-serif;
+}
+
+.card {
+  /* BFC(독립적인 레이아웃)-overflow: hidden, display:flow-root, float:left, position:absolute */
+
+  /* background-color: pink; */
+  border: 1px solid #ccc;
+  margin: 2em; /* 16 * 2 = 32px */
+  border-radius: 0.5rem;
+  padding: 2em;
+  &.gootpartner {
+    display: flow-root;
+  }
+
+  /* 이미지 */
+  .thumbnail {
+    --radius: 50%;
+
+    border: 1px solid #ccc;
+    float: left;
+    margin: 1em;
+    padding: 0.625em;
+    border-radius: var(--radius);
+    width: 100px;
+    height: auto;
+    shape-outside: circle(50%);
+
+    img {
+      max-width: 100%;
+      border-radius: var(--radius);
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      object-position: 0 -20px;
+    }
+  }
+  /* 제목 */
+  .subject {
+    /* background-color: aqua; */
+    font-size: 1.5rem;
+    font-weight: 600;
+    span {
+      vertical-align: top;
+
+      &[lang='en'] {
+        font-size: 0.5em;
+      }
+    }
+  }
+
+  /* 내용 */
+  .content {
+    margin-top: 0.625rem;
+  }
+}

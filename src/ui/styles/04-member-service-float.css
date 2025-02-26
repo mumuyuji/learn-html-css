@@ -1,0 +1,19 @@
+body {
+  font-family: 'SUIT', sans-serif;
+}
+
+/* 멤버 서비스 */
+.member-service {
+  background: yellow;
+  margin: 20px;
+
+  .item {
+    padding: 10px;
+    float:;
+  }
+}
+
+/* 멤버 링크 */
+.member-link {
+  background: pink;
+}
