@@ -1,3 +1,4 @@
+/* body 스타일 */
 body {
   font-family: 'SUIT', sans-serif;
   color: #121212;
@@ -5,6 +6,7 @@ body {
   line-height: 1.15;
   font-weight: 300;
 }
+
 /* 링크 스타일 */
 a {
   color: inherit;

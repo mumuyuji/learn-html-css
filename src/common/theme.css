@@ -1,5 +1,6 @@
 :root {
   /* 파스텔 색상 */
+  --white: #fff; /* 화이트 */
   --pastel-pink: #ffd1dc; /* 파스텔 핑크 */
   --pastel-lavender: #e6e6fa; /* 파스텔 라벤더 */
   --pastel-mint: #b2f2bb; /* 파스텔 민트 */
