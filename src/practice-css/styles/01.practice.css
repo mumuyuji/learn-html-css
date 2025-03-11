@@ -1,4 +1,23 @@
-@import url(/src/common/theme.css);
+@import url('/src/common/theme.css');
+body {
+  margin: 20px;
+}
+/* .card { */
+/* background: yellow;
+  border: 1px solid black;
+  .thumbnail {
+    display: flow-root;
+    img {
+      float: left;
+      width: 100px;
+      border: 1px solid black;
+      vertical-align: middle;
+    }
+  }
+  .content {
+    clear: both;
+  }
+} */
 /* .mon-friend-son{
   di   height: 212px;splay: none;
 } */
@@ -19,8 +38,8 @@
 
     img {
       /* position: relative;
-      right: -50px;
-      top: -50px; */
+        right: -50px;
+        top: -50px; */
       float: left;
       width: 100px;
       vertical-align: middle;

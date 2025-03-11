@@ -1,0 +1,34 @@
+@layer state, moduele;
+
+@layer state {
+  p.alert {
+    background-color: red !important;
+  }
+  p {
+    border: medium solid limegreen;
+    padding: 2em;
+  }
+}
+
+@layer moduele {
+  .alert {
+    border: medium solid violet;
+    color: white;
+  }
+  p {
+    padding: 1em;
+  }
+  p.alert {
+    background: green !important;
+  }
+}
+
+@layer {
+  p.alert {
+    background: blue !important;
+  }
+}
+
+p.alert {
+  background: gray;
+}
